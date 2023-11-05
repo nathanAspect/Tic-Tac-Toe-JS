@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --xColor: #BF241A;
+    --oColor: #673AB7;
+    font-family: 'Nanum Pen Script', cursive;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(#1793BF, #024D68);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons button,.home button{
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 6%;
+    border: none;
+    box-shadow: 4px 4px 0 #4A4A4A;
+    margin: 4px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 70px;
+    color: var(--oColor);
+    transition: .2s;
+    cursor: pointer;
+}
+.buttons button:active{
+    transform: scale(.9);
+}
+.home button:active{
+    transform: scale(.9);
+}
+.buttons {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 15px
+}
+.buttons{
+    margin: 0 50px;
+}
+.playZone{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ h1{
+    font-size: 80px;
+    color: white;
+    text-shadow:  4px 4px 0 #4A4A4A;
+}
+.playZone span{
+    color: var(--xColor);
+    font-size: 90px;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+}
+.home div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home button{
+    width: 100px;
+    aspect-ratio: 1.5;
+    border-radius: 6%;
+    border: none;
+    box-shadow: 4px 4px 0 #4A4A4A;
+    margin: 4px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 40px;
+    color: var(--oColor)
+}
+
+.wrongMove{
+    background-color: #fa6055;
+}
+
+.winRise{
+    transform: scale(1.07);
+    background-color: rgb(134, 202, 134);
+}
+
+.restartBtn{
+    width: 100px;
+    border-radius: 6%;
+    border: none;
+    box-shadow: 4px 4px 0 #4A4A4A;
+    margin: 4px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.767);
+    transition: .2s;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: rgb(77, 168, 77);
+    opacity: 0;
+}
+.restartBtn:active{
+    transform: scale(.9);
+}
